@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///C:/Users/Felipe/Downloads/Link%20site.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Valores - iPhones</title>
+    <link rel="stylesheet" href="./Tabela de Valores - iPhones_files/css2">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #121212, #0e0e0e);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: #242424;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2.8rem; /* Tamanho da fonte reduzido */
+            color: #f1c40f;
+            text-align: center;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px; /* Menor espaçamento */
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1::after {
+            content: '';
+            width: 120px;
+            height: 5px;
+            background: #f39c12;
+            display: block;
+            margin: 15px auto;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #f39c12;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        h2:hover {
+            color: #e67e22;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #444;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra da tabela */
+        }
+
+        tr {
+            background-color: #2b2b2b;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        tr:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        th, td {
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #555;
+            position: relative;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+
+        th {
+            background-color: #f39c12;
+            color: #000;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #333;
+        }
+
+        td::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        tr:hover td::before {
+            opacity: 1;
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            th, td {
+                padding: 15px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            th, td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <h1>Saiba quanto seu usado vale na troca!</h1>
+        <h2>Varia de acordo com GB, Saúde da Bateria e estado</h2>
+
+        <table aria-describedby="iphone-table">
+            <thead>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone XR" class="icon">IPhone XR</td>
+                    <td>R$ 700 - 1000</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 11" class="icon">IPhone 11</td>
+                    <td>R$ 1000 - 1500</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 11 Pro" class="icon">IPhone 11 Pro</td>
+                    <td>R$ 1400 - 1700</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 11 Pro Max" class="icon">IPhone 11 Pro Max</td>
+                    <td>R$ 1600 - 1900</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 12" class="icon">IPhone 12</td>
+                    <td>R$ 1500 - 2000</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 12 Pro" class="icon">IPhone 12 Pro</td>
+                    <td>R$ 1900 - 2400</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 12 Pro Max" class="icon">IPhone 12 Pro Max</td>
+                    <td>R$ 2400 - 3000</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 13" class="icon">IPhone 13</td>
+                    <td>R$ 2300 - 2900</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 13 Pro" class="icon">IPhone 13 Pro</td>
+                    <td>R$ 2800 - 3400</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 13 Pro Max" class="icon">IPhone 13 Pro Max</td>
+                    <td>R$ 3400 - 4000</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 14" class="icon">IPhone 14</td>
+                    <td>R$ 3000 - 3500</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 14 Pro" class="icon">IPhone 14 Pro</td>
+                    <td>R$ 3700 - 4200</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 14 Pro Max" class="icon">IPhone 14 Pro Max</td>
+                    <td>R$ 4400 - 4800</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 15" class="icon">IPhone 15</td>
+                    <td>R$ 3500 - 4000</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 15 Pro" class="icon">IPhone 15 Pro</td>
+                    <td>R$ 4500 - 4800</td>
+                </tr>
+                <tr>
+                    <td><img src="./Tabela de Valores - iPhones_files/iphone-x.png" alt="iPhone 15 Pro Max" class="icon">IPhone 15 Pro Max</td>
+                    <td>R$ 5200 - 5600</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body></html>
